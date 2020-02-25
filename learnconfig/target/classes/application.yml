@@ -1,0 +1,4 @@
+my:
+  name: linjb
+  age: 18
+  number: ${random.int}
