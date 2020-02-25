@@ -11,6 +11,7 @@
     <description>springboot学习项目</description>
     <modules>
         <module>learnconfig</module>
+        <module>learnJDBCTemplate</module>
     </modules>
 
     <properties>
