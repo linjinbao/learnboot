@@ -11,7 +11,8 @@
     <description>springboot学习项目</description>
     <modules>
         <module>learnconfig</module>
-        <module>learnJDBCTemplate</module>
+        <module>learnjdbctemplate</module>
+        <module>learnjpa</module>
     </modules>
 
     <properties>
@@ -32,6 +33,28 @@
                 <artifactId>spring-boot-starter-web</artifactId>
                 <version>2.2.4.RELEASE</version>
             </dependency>
+            <dependency>
+                <groupId>mysql</groupId>
+                <artifactId>mysql-connector-java</artifactId>
+                <version>5.1.37</version>
+            </dependency>
+            <dependency>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-starter-jdbc</artifactId>
+                <version>2.2.4.RELEASE</version>
+            </dependency>
+            <dependency>
+                <groupId>com.alibaba</groupId>
+                <artifactId>druid</artifactId>
+                <version>1.0.29</version>
+            </dependency>
+            <!-- https://mvnrepository.com/artifact/org.springframework.boot/spring-boot-starter-data-jpa -->
+            <dependency>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-starter-data-jpa</artifactId>
+                <version>2.2.4.RELEASE</version>
+            </dependency>
+
         </dependencies>
     </dependencyManagement>
 
