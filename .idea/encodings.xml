@@ -1,9 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="Encoding">
-    <file url="file://$PROJECT_DIR$/learnJDBCTemplate/src/main/java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/learnJDBCTemplate/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/learnbeatsql/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/learnbeatsql/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/learnconfig/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/learnconfig/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/learnjdbctemplate/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/learnjdbctemplate/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/learnjpa/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/learnjpa/src/main/resources" charset="UTF-8" />
   </component>
 </project>

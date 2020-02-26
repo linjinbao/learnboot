@@ -7,7 +7,9 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="learnconfig" />
-        <module name="learnJDBCTemplate" />
+        <module name="learnbeatsql" />
+        <module name="learnjdbctemplate" />
+        <module name="learnjpa" />
       </profile>
     </annotationProcessing>
   </component>
