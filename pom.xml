@@ -15,6 +15,7 @@
         <module>learnjpa</module>
         <module>learnbeatsql</module>
         <module>learnmybatis</module>
+        <module>learntx</module>
     </modules>
 
     <properties>

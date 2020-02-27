@@ -9,8 +9,15 @@
         <module name="learnconfig" />
         <module name="learnbeatsql" />
         <module name="learnjdbctemplate" />
+        <module name="learnmybatis" />
         <module name="learnjpa" />
+        <module name="learntx" />
       </profile>
     </annotationProcessing>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="learnmybatis" options="" />
+    </option>
   </component>
 </project>
