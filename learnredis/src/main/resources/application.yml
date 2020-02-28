@@ -1,0 +1,8 @@
+spring:
+  application:
+    name: learn-redis
+  redis:
+    host: 192.168.126.138
+    port: 6379
+    database: 0
+    password:

@@ -17,6 +17,7 @@
         <module>learnmybatis</module>
         <module>learntx</module>
         <module>learnmongodb</module>
+        <module>learnredis</module>
     </modules>
 
     <properties>

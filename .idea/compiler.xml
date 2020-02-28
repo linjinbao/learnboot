@@ -12,6 +12,7 @@
         <module name="learnjdbctemplate" />
         <module name="learnmybatis" />
         <module name="learnjpa" />
+        <module name="learnredis" />
         <module name="learntx" />
       </profile>
     </annotationProcessing>
