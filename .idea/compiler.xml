@@ -10,6 +10,7 @@
         <module name="learnbeatsql" />
         <module name="learnmongodb" />
         <module name="learnjdbctemplate" />
+        <module name="learnrestdoc" />
         <module name="learnmybatis" />
         <module name="learnjpa" />
         <module name="learnredis" />
@@ -20,6 +21,7 @@
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="learnmybatis" options="" />
+      <module name="learnrestdoc" options="" />
     </option>
   </component>
 </project>
