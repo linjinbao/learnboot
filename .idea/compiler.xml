@@ -6,19 +6,20 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="learnconfig" />
-        <module name="learnbeatsql" />
-        <module name="learnmongodb" />
-        <module name="learnscheduler" />
-        <module name="learnfileupload" />
-        <module name="learnjdbctemplate" />
-        <module name="learnrestdoc" />
-        <module name="learnmybatis" />
-        <module name="learnjpa" />
-        <module name="learnredis" />
         <module name="learntx" />
-        <module name="learncache" />
+        <module name="learnjdbctemplate" />
+        <module name="learnelk" />
+        <module name="learnjpa" />
         <module name="learnswagger2" />
+        <module name="learnconfig" />
+        <module name="learnscheduler" />
+        <module name="learncache" />
+        <module name="learnbeatsql" />
+        <module name="learnrestdoc" />
+        <module name="learnmongodb" />
+        <module name="learnfileupload" />
+        <module name="learnredis" />
+        <module name="learnmybatis" />
       </profile>
     </annotationProcessing>
   </component>

@@ -23,6 +23,7 @@
         <module>learncache</module>
         <module>learnfileupload</module>
         <module>learnscheduler</module>
+        <module>learnelk</module>
     </modules>
 
     <properties>
