@@ -1,0 +1,5 @@
+server:
+  port: 9017
+spring:
+  application:
+    name: learn-fileupload

@@ -21,6 +21,7 @@
         <module>learnrestdoc</module>
         <module>learnswagger2</module>
         <module>learncache</module>
+        <module>learnfileupload</module>
     </modules>
 
     <properties>

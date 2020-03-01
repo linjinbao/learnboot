@@ -2,3 +2,8 @@ my:
   name: linjb
   age: 18
   number: ${random.int}
+server:
+  port: 9001
+spring:
+  application:
+    name: learn-config
