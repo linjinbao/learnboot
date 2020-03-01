@@ -22,6 +22,7 @@
         <module>learnswagger2</module>
         <module>learncache</module>
         <module>learnfileupload</module>
+        <module>learnscheduler</module>
     </modules>
 
     <properties>

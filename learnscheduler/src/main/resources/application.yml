@@ -1,0 +1,5 @@
+spring:
+  application:
+    name: learn-scheduler
+server:
+  port: 9018

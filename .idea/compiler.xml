@@ -9,6 +9,7 @@
         <module name="learnconfig" />
         <module name="learnbeatsql" />
         <module name="learnmongodb" />
+        <module name="learnscheduler" />
         <module name="learnfileupload" />
         <module name="learnjdbctemplate" />
         <module name="learnrestdoc" />
