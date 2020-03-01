@@ -1,0 +1,5 @@
+spring:
+  application:
+    name: learn-swagger2
+server:
+  port: 9011

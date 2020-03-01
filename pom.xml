@@ -19,6 +19,7 @@
         <module>learnmongodb</module>
         <module>learnredis</module>
         <module>learnrestdoc</module>
+        <module>learnswagger2</module>
     </modules>
 
     <properties>
