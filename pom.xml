@@ -20,6 +20,7 @@
         <module>learnredis</module>
         <module>learnrestdoc</module>
         <module>learnswagger2</module>
+        <module>learncache</module>
     </modules>
 
     <properties>
