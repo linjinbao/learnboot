@@ -24,6 +24,7 @@
         <module>learnfileupload</module>
         <module>learnscheduler</module>
         <module>learnelk</module>
+        <module>learnasync</module>
     </modules>
 
     <properties>
