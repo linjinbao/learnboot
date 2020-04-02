@@ -12,6 +12,7 @@
         <module name="learnelk" />
         <module name="learnjpa" />
         <module name="learnswagger2" />
+        <module name="learnsecurity" />
         <module name="learnconfig" />
         <module name="learnscheduler" />
         <module name="learndocker" />

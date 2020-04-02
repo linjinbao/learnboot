@@ -1,0 +1,9 @@
+spring:
+  application:
+    name: security
+  security:
+    user:
+      password: 123321
+      name: admin
+server:
+  port: 9998

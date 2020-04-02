@@ -26,6 +26,7 @@
         <module>learnelk</module>
         <module>learnasync</module>
         <module>learndocker</module>
+        <module>learnsecurity</module>
     </modules>
 
     <properties>
