@@ -1,0 +1,10 @@
+server:
+  port: 9999
+management:
+  endpoints:
+    jmx:
+      exposure:
+        include: '*'
+    web:
+      exposure:
+        include: '*'
