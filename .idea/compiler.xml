@@ -9,6 +9,7 @@
         <module name="learncache" />
         <module name="learnjdbctemplate" />
         <module name="learnelk" />
+        <module name="learnwebsocket" />
         <module name="learnjpa" />
         <module name="learnswagger2" />
         <module name="learnsecurity" />
