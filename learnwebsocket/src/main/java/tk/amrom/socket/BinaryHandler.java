@@ -6,6 +6,7 @@ import org.springframework.web.socket.*;
 import org.springframework.web.socket.handler.BinaryWebSocketHandler;
 
 import java.io.*;
+import java.nio.ByteBuffer;
 import java.util.*;
 
 /**
@@ -15,25 +16,36 @@ import java.util.*;
  */
 public class BinaryHandler extends BinaryWebSocketHandler {
     private static final Logger LOG = LoggerFactory.getLogger(BinaryHandler.class);
-
+    private static String filePath = "E:\\tmp";
+    private static String fileOut;      //输出的文件名称
+    private static File file;
     @Override
     protected void handleTextMessage(WebSocketSession session, TextMessage message) {
         LOG.info("handleTextMessage");
-        LOG.info(message.getPayload());
+        fileOut = message.getPayload();
+        file = new File(filePath, fileOut);
+        LOG.info("文件已经创建");
+        LOG.info("文件的路径为：" + file.getAbsolutePath());
     }
     @Override
-    protected void handleBinaryMessage(WebSocketSession session, BinaryMessage message) throws Exception {
+    protected void handleBinaryMessage(WebSocketSession session, BinaryMessage message) throws IOException {
         LOG.info("handleBinaryMessage");
         int payloadLength = message.getPayloadLength();
-        session.sendMessage(new TextMessage("Receiving Data " + payloadLength));
-        byte[] array = message.getPayload().array();
-        String chunkName = "e:\\tmp\\" + UUID.randomUUID().toString();
-        File file = new File(chunkName);
-        FileOutputStream fou = new FileOutputStream(chunkName);
-        LOG.info("chunkName = " + chunkName);
-        fou.write(array);
-        fou.flush();
-        fou.close();
+        try {
+            session.sendMessage(new TextMessage("Receiving Data " + payloadLength));
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+        FileOutputStream fstream = null;
+        byte[] b = message.getPayload().array();
+        try {
+            fstream = new FileOutputStream(file, true);
+            fstream.write(b);
+        } catch (FileNotFoundException e) {
+            e.printStackTrace();
+        }finally {
+            fstream.close();
+        }
     }
 
     @Override
@@ -75,26 +87,5 @@ public class BinaryHandler extends BinaryWebSocketHandler {
     @Override
     public void afterConnectionClosed(WebSocketSession session, CloseStatus status) throws Exception {
         LOG.info("连接关闭，，，");
-        LOG.info("开始合并文件");
-        File file = new File("e:\\tmp");
-        File[] files = file.listFiles();
-        LOG.info("files.length = " + files.length);
-        BufferedOutputStream destOutputStream =
-                new BufferedOutputStream(new FileOutputStream("e:\\tmpb\\b"));
-        byte[] fileBuffer = new byte[1024];
-        int readBytesLength = 0;
-        for (int i=0; i<files.length; i++){
-            File sourceFile = files[i];
-            BufferedInputStream sourceInputStream =
-                    new BufferedInputStream(new FileInputStream(sourceFile));
-            while((readBytesLength=sourceInputStream.read(fileBuffer))!=-1){
-                destOutputStream.write(fileBuffer, 0, readBytesLength);
-            }
-            sourceFile.delete();
-        }
-        destOutputStream.flush();
-        destOutputStream.close();
-
-        LOG.info("文件合并完成");
     }
 }
