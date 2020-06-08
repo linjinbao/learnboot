@@ -26,13 +26,18 @@ public class BinaryHandler extends BinaryWebSocketHandler {
         file = new File(filePath, fileOut);
         LOG.info("文件已经创建");
         LOG.info("文件的路径为：" + file.getAbsolutePath());
+        try {
+            session.sendMessage(new TextMessage("开始传输文件："+ file.getName()));
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
     }
     @Override
     protected void handleBinaryMessage(WebSocketSession session, BinaryMessage message) throws IOException {
         LOG.info("handleBinaryMessage");
         int payloadLength = message.getPayloadLength();
         try {
-            session.sendMessage(new TextMessage("Receiving Data " + payloadLength));
+            session.sendMessage(new TextMessage("progress" + payloadLength));
         } catch (IOException e) {
             e.printStackTrace();
         }
